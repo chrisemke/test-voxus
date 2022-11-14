@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "test-voxus"
+version = "0.1.0"
+description = "Simple Chuck Norris API to code interview"
+authors = ["Christian G. Semke <chrisemke@protonmail.com>"]
+license = "GNU Affero General Public License v3.0"
+readme = "README.md"
+packages = [{include = "test_voxus"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+flake8 = "^5.0.4"
+autopep8 = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
