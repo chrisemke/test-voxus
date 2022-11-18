@@ -9,3 +9,6 @@ just run this command in the root of the project and be happy
 ```
 podman-compose up -d --build
 ```
+
+## Access
+you can access the api on 0.0.0.0/graphql and 0.0.0.0/docs
