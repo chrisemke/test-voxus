@@ -27,6 +27,8 @@ def get_jokes(
 			response = response[0:limit]
 
 		return list(map(call_sanitizer, response))
+	response = get('https://api.chucknorris.io/jokes/random').json()
+	return [call_sanitizer(response)]
 
 
 def call_sanitizer(request_content: dict) -> Sanitizer:
